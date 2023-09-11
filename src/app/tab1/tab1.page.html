@@ -1,17 +1,75 @@
+
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Login
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-content [fullscreen]="false">
+  <ion-header collapse="condense" >
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">Login</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-grid>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <ion-row>
+      <ion-col size="2">
+      </ion-col>
+      <ion-col size="8">
+        <div class="imp-lg">
+          <ion-list>      
+            <ion-item>
+              <ion-input size="large" label="User"></ion-input> 
+            </ion-item>
+            <ion-item>
+              <ion-input type="password" size="large" label="Password"></ion-input> 
+            </ion-item>
+          </ion-list>
+        </div>
+      </ion-col>
+      <ion-col size="2">
+        <ion-content>
+          <ion-chip>
+            <ion-avatar>
+              <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+            </ion-avatar>
+            <ion-label>Avatar Chip</ion-label>
+            <ion-icon name="close-circle"></ion-icon>
+          </ion-chip>
+        </ion-content>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4"></ion-col>
+      <ion-col size="4">        
+        <div class="btn-lg-ing"><ion-button expand="block">Ingresar</ion-button></div>  
+      </ion-col>
+      <ion-col size="4"></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4">
+      </ion-col>
+      <ion-col size="4">
+        <div class="texto-lg">¿No estas registrado?</div>
+      </ion-col>
+      <ion-col size="4">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4"></ion-col>
+      <ion-col size="4">        
+        <ion-button expand="block">Registrate</ion-button>
+      </ion-col>
+      <ion-col size="4"></ion-col>
+
+    </ion-row>
+  </ion-grid>
+  
+  
 </ion-content>
+
+  
+
